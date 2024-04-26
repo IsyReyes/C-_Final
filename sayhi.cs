@@ -13,8 +13,6 @@ public string username = " ";
     username  = Console.ReadLine();
 
     Console.WriteLine("Gracias " + username + ", a continuación te presentaré una serie de opciones que podrás elegir para realizar diferentes tareas");
-    Console.WriteLine("Elige escribiendo el número de la tarea a realizar.");  
-    Console.WriteLine("lista de tareas:");
 
     //instantiate options and print them
     Options options = new Options();
