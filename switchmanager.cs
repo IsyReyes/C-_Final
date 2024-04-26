@@ -23,7 +23,11 @@ public void switchSelect(){
       sums.TwoNumbers();
       loopController.loopControl();
       return;
-      
+      case "2":
+      sums = new Sums();
+      sums.ThreeNumbers();
+      loopController.loopControl();
+      return;
 
     }
 
