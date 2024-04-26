@@ -8,7 +8,7 @@ public class Options {
 
     Console.WriteLine("¿Qué quieres hacer ahora mismo?");
     Console.WriteLine("1. Suma de dos números");
-    Console.WriteLine("2. Contar un chiste");
+    Console.WriteLine("2. Suma de tres números");
 
     SwitchManager switchManager = new SwitchManager();
     switchManager.switchSelect();
