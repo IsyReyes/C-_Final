@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class LoopController(){
 
-	private string continueOrBreak = "";
+	public string continueOrBreak = "";
 
 	public void loopControl(){
 		Console.WriteLine("¿Quieres hacer algo más? Por favor ingresa a continuación el número correspontiende a tu decisión:");
@@ -19,10 +19,8 @@ public class LoopController(){
 				return;
 			case "2":
 				Console.WriteLine("¡Gracias por usar el Chatbot de primer semestre! Que tengas un buen día.");
+				Environment.Exit(0);
 				break;
 		}
 	}
-
-
-
 }

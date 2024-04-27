@@ -6,31 +6,48 @@ public class SwitchManager{
 
 private string choice = " ";
 
-LoopController loopController = new LoopController();
 
-public void switchSelect(){
 
-// main method for starting the conversation. Will move rest of text later to include the conversational loop inside a new method
-// and not having to ask for the name again every time we come back here.
+	public void switchSelect(){
+
+
     choice = Console.ReadLine();
 
-
+	if(!choice.Equals("Salir", StringComparison.OrdinalIgnoreCase)){
     Console.WriteLine("Excelente, has seleccionado la opción número " + choice + ", estaré encantada de ayudarte a resolver esta tarea.");
+	} else{
+		Console.WriteLine("¡Gracias por usar el Chatbot de primer semestre! Que tengas un buen día.");
+		Environment.Exit(0);
+	}
 
-BasicArithmetic basicArithmetic = new BasicArithmetic();
+
+	BasicArithmetic basicArithmetic = new BasicArithmetic();
+	LoopController loopController = new LoopController();
 
     switch (choice) {
-      case "1": 
-      basicArithmetic.TwoNumbers();
-      break;
-      case "2":
-      basicArithmetic.ThreeNumbers();
-      break;
-      case "3":
-      basicArithmetic.multiCalculate();
-      break;
+		case "1": 
+		basicArithmetic.TwoNumbers();
+		break;
+		case "2":
+		basicArithmetic.ThreeNumbers();
+		break;
+		case "3":
+		basicArithmetic.multiCalculate();
+		break;
+		case "4":
+		BasicArithmetic.TriangleArea();
+		break;
+		case "5":
+		BasicArithmetic.SecondsInADay();
+		break;
+		case "Salir":
+		break;
+		default:
+    	Console.WriteLine("Opción no reconocida, intenta de nuevo.");
+    	break;
+		
     }
     loopController.loopControl();
 
-  }
+	}
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 
 public class BasicArithmetic
 {
@@ -19,6 +20,7 @@ public class BasicArithmetic
         return false;
     }
 
+//Sum of two numbers 
     public void TwoNumbers()
     {
         while (true)
@@ -36,6 +38,7 @@ public class BasicArithmetic
         }
     }
 
+//Sum of three numbers
     public void ThreeNumbers()
     {
         while (true)
@@ -57,6 +60,7 @@ public class BasicArithmetic
         }
     }
 
+//sum, substrac, product and division 
     public void multiCalculate(){
         Console.WriteLine("Acabas de accesar a la multicalculadora. Tomaremos 4 números y obtendremos la suma, resta, producto y divisón de estos.");
 
@@ -83,15 +87,40 @@ public class BasicArithmetic
             try{
             Console.WriteLine("La divisón de estos números es " + (num1 / num2 / num3 / num4)); 
             }
-            catch (DivideByZeroException) { 
+            catch (DivideByZeroException) {
                 Console.WriteLine("Se intento dividir por 0, lo que podría resultar en paradojas matemáticas. Ignorando proceso.");
                 break;
             }
-
         break;
-
         }
-
-        
     }
+
+//area of a triangle
+    public static void TriangleArea(){
+        int triangleBase;
+        int triangleHeight;
+
+        Console.WriteLine("Muy bien, calculalremos el area de un triángulo. Para esto por favor indica cuál es la base, y la altura a continuación.");
+        Console.WriteLine("Ingresa la base:");
+        triangleBase = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingresa la altura:");
+        triangleHeight = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Gracias. El área del tríangulo es " + (triangleBase * triangleHeight / 2));
+    }
+
+    //number of seconds in given days
+    public static void SecondsInADay(){
+        int secondsInADay = 86400;
+        int numberOfDays;
+
+        Console.WriteLine("Perfecto, vamos a calcular cuántos segundos hay en un número determinado de días. Por favor ingresa el número de días a continuación.");
+        Console.WriteLine("Número de días:");
+        numberOfDays = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("El número de segundos en " + numberOfDays + " día/s son " + (numberOfDays * secondsInADay));
+    }
+
+
+
 }
