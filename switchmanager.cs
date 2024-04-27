@@ -44,10 +44,16 @@ private string choice = " ";
 		VariableExchange.ExchangeVariable();
 		break;
 		case "7":
-		Angles.getAngles();
+		ReturnMissing.getAngles();
 		break;
 		case "8":
 		Degrees.ConvertDegrees();
+		break;
+		case "9":
+		ReturnMissing.MissingMoney();
+		break;
+		case "10":
+		calculateAge.AgeInFuture();
 		break;
 		case "Salir":
 		break;
