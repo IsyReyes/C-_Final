@@ -12,6 +12,8 @@ public class Options {
 		Console.WriteLine("3. Multicálculo para 4 números.");
 		Console.WriteLine("4. Calcular la base de un triángulo.");
 		Console.WriteLine("5. Calcular cuántos segundos hay en X número de días.");
+		Console.WriteLine("6. Intercambiar los valores de dos variables.");
+
 		Console.WriteLine("Salir. Escribe Salir para terminar el programa.");
 
 
