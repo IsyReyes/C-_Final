@@ -13,6 +13,8 @@ public class Options {
 		Console.WriteLine("4. Calcular la base de un triángulo.");
 		Console.WriteLine("5. Calcular cuántos segundos hay en X número de días.");
 		Console.WriteLine("6. Intercambiar los valores de dos variables.");
+		Console.WriteLine("7. Buscar el ángulo faltante de un triángulo.");
+		Console.WriteLine("8. Convertir grados de Celsius a Farenheit.");
 
 		Console.WriteLine("Salir. Escribe Salir para terminar el programa.");
 

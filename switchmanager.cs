@@ -43,6 +43,12 @@ private string choice = " ";
 		case "6":
 		VariableExchange.ExchangeVariable();
 		break;
+		case "7":
+		Angles.getAngles();
+		break;
+		case "8":
+		Degrees.ConvertDegrees();
+		break;
 		case "Salir":
 		break;
 		default:
