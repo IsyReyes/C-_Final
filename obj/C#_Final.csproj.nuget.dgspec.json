@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\C#_Final\\C#_Final.csproj": {}
+    "c:\\C-_Final\\C#_Final.csproj": {}
   },
   "projects": {
-    "f:\\C#_Final\\C#_Final.csproj": {
+    "c:\\C-_Final\\C#_Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\C#_Final\\C#_Final.csproj",
+        "projectUniqueName": "c:\\C-_Final\\C#_Final.csproj",
         "projectName": "C#_Final",
-        "projectPath": "f:\\C#_Final\\C#_Final.csproj",
+        "projectPath": "c:\\C-_Final\\C#_Final.csproj",
         "packagesPath": "C:\\Users\\IsyRe\\.nuget\\packages\\",
-        "outputPath": "f:\\C#_Final\\obj\\",
+        "outputPath": "c:\\C-_Final\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IsyRe\\AppData\\Roaming\\NuGet\\NuGet.Config"

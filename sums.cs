@@ -55,3 +55,5 @@ public class Sums
         }
     }
 }
+
+//check overloads to make possible sums with different argument numbers
