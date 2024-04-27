@@ -17,19 +17,20 @@ public void switchSelect(){
 
     Console.WriteLine("Excelente, has seleccionado la opción número " + choice + ", estaré encantada de ayudarte a resolver esta tarea.");
 
+BasicArithmetic basicArithmetic = new BasicArithmetic();
+
     switch (choice) {
       case "1": 
-      Sums sums = new Sums();
-      sums.TwoNumbers();
-      loopController.loopControl();
-      return;
+      basicArithmetic.TwoNumbers();
+      break;
       case "2":
-      sums = new Sums();
-      sums.ThreeNumbers();
-      loopController.loopControl();
-      return;
-
+      basicArithmetic.ThreeNumbers();
+      break;
+      case "3":
+      basicArithmetic.multiCalculate();
+      break;
     }
+    loopController.loopControl();
 
   }
 }
