@@ -40,6 +40,9 @@ private string choice = " ";
 		case "5":
 		BasicArithmetic.SecondsInADay();
 		break;
+		case "6":
+		VariableExchange.ExchangeVariable();
+		break;
 		case "Salir":
 		break;
 		default:
