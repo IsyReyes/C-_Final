@@ -55,6 +55,9 @@ private string choice = " ";
 		case "10":
 		calculateAge.AgeInFuture();
 		break;
+		case "11":
+		Quadratic.QuadraticEquation();
+		break;
 		case "Salir":
 		break;
 		default:
