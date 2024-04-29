@@ -8,7 +8,8 @@ public class Promos
         Console.WriteLine("Vamos a revisar tu descuento! Introduce el nombre del artículo:");
         string articleName = Console.ReadLine();
 
-        Console.WriteLine("Introduce la clave del artículo (01 para 10% o 02 para 20% de descuento):");
+//01 for 10%, 02 for 20% discount
+        Console.WriteLine("Introduce la clave del artículo:");
         string key = Console.ReadLine();
 
         Console.WriteLine("Introduce el precio original del artículo:");
@@ -52,7 +53,7 @@ public class Promos
         Console.WriteLine("¡Bienvenido a la ruleta de descuentos! Introduce el total de tu compra:");
         double totalPurchase = Convert.ToDouble(Console.ReadLine());
 
-        //(menor a 74 para 15% de descuento, 74 o más para 20%)
+        //under 74 gives 15% 74 or over gives 20%)
         Console.WriteLine("¡Introduce un número aleatorio para ganar un descuento!:");
         int randomNumber = Convert.ToInt32(Console.ReadLine());
 
