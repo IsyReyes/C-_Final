@@ -64,6 +64,9 @@ private string choice = " ";
 		case "13":
 		TonsCalculator.TonsRate();
 		break;
+		case "14":
+		PassOrFail.AcademicCheck();
+		break;
 		case "Salir":
 		break;
 		default:

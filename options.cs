@@ -19,7 +19,9 @@ public class Options {
 		Console.WriteLine("10. Calcular tu edad hasta el año 2030");
 		Console.WriteLine("11. Realizar la ecuación cuadrática con coeficientes predefinidos.");
 		Console.WriteLine("12. Obtener tu sueldo por hora.");
-		Console.WriteLine("13. Calcular costo por traslado de toneladas");
+		Console.WriteLine("13. Calcular costo por traslado de toneladas.");
+		Console.WriteLine("14. Saber si estás aprobado o reprobado.");
+
 
 
 
