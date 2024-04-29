@@ -76,6 +76,15 @@ private string choice = " ";
 		case "17":
 		Promos.SupermarketDiscounts();
 		break;
+		case "18":
+		Loops.PositivesOnly();
+		break;
+		case "19":
+		Loops.Multiply();
+		break;
+		case "20":
+		Loops.GetFactorial();
+		break;
 		case "Salir":
 		break;
 		default:
