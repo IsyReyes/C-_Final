@@ -85,6 +85,9 @@ private string choice = " ";
 		case "20":
 		Loops.GetFactorial();
 		break;
+		case "21":
+		Loops.GetHighest();
+		break;
 		case "Salir":
 		break;
 		default:

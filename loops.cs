@@ -42,4 +42,27 @@ public class Loops{
 
 Console.WriteLine($"El factorial de {num} es {factorial}");
     }
+
+    public static void GetHighest(){
+
+            int highestNumber = 0;
+            int inputNumber = 0;
+
+        Console.WriteLine("Hola, vamos a buscar el número más grande!");
+        
+        for (int i = 1; i == 20; i++){
+            Console.WriteLine("Por favor ingresa el número:");
+            
+            
+            
+            inputNumber = Convert.ToInt32(Console.ReadLine());
+
+            if (inputNumber >= highestNumber){
+                highestNumber = inputNumber;
+            }
+        }
+
+        Console.WriteLine($"El número más alto es {highestNumber}");
+
+    }
 }
