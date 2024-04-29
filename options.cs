@@ -21,6 +21,9 @@ public class Options {
 		Console.WriteLine("12. Obtener tu sueldo por hora.");
 		Console.WriteLine("13. Calcular costo por traslado de toneladas.");
 		Console.WriteLine("14. Saber si estás aprobado o reprobado.");
+        Console.WriteLine("15. Calcular descuento por artículo.");
+        Console.WriteLine("16. Calcular total a pagar por camisas.");
+        Console.WriteLine("17. Calcular descuento en supermercado.");
 
 
 
