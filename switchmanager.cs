@@ -58,6 +58,24 @@ private string choice = " ";
 		case "11":
 		Quadratic.QuadraticEquation();
 		break;
+		case "12":
+		EmployeeCalculator.CalculateHourlyWage();
+		break;
+		case "13":
+		TonsCalculator.TonsRate();
+		break;
+		case "14":
+		PassOrFail.AcademicCheck();
+		break;
+		case "15":
+		Promos.PrintDiscount();
+		break;
+		case "16":
+		Promos.ShirtsTotal();
+		break;
+		case "17":
+		Promos.SupermarketDiscounts();
+		break;
 		case "Salir":
 		break;
 		default:

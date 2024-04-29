@@ -13,14 +13,14 @@ public class Quadratic
 
         if (discriminant >= 0)
         {
-            // Calcula las raíces solo si el discriminante es no negativo
+            // this will only make a calculation if the discriminant is not a negative number
             x1 = (-b - Math.Sqrt(discriminant)) / (2 * a);
             x2 = (-b + Math.Sqrt(discriminant)) / (2 * a);
             Console.WriteLine("Los valores son: X1 = {0}, X2 = {1}", x1, x2);
         }
         else
         {
-            // Si el discriminante es negativo, no hay raíces reales
+            // and if it is a negative number it'll show this
             Console.WriteLine("No hay soluciones reales porque el discriminante es negativo.");
         }
     }

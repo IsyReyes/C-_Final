@@ -23,8 +23,8 @@ public class ReturnMissing{
 
     public static void MissingMoney(){
         int xHowMany;
-        int yHowMany = 100;
-        int zHowMany = 50;
+        int yHowMany;
+        int zHowMany;
 
         Console.WriteLine("Vamos a hacer una operación con valores predefinidos para saber cuánto dinero tiene Juan.");
         Console.WriteLine("Puedes elegir cuántos billetes de 200, de 100 y 50 tendrá.");
