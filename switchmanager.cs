@@ -58,6 +58,9 @@ private string choice = " ";
 		case "11":
 		Quadratic.QuadraticEquation();
 		break;
+		case "12":
+		EmployeeCalculator.CalculateHourlyWage();
+		break;
 		case "Salir":
 		break;
 		default:

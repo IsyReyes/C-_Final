@@ -18,6 +18,8 @@ public class Options {
 		Console.WriteLine("9. Operación con variables predefinidas, dale dinero a Juan.");
 		Console.WriteLine("10. Calcular tu edad hasta el año 2030");
 		Console.WriteLine("11. Realizar la ecuación cuadrática con coeficientes predefinidos.");
+		Console.WriteLine("12. Obtener tu sueldo por hora.");
+
 
 		Console.WriteLine("Salir. Escribe Salir para terminar el programa.");
 
