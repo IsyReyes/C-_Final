@@ -22,6 +22,8 @@ public static void CalculateHourlyWage() {
     Console.WriteLine("Tu sueldo será de " + salary);
 }
 
+//refacotred both of these to leave interactions appart. 
+
 private static int SafeReadInt(string prompt) {
     int input;
     while (!int.TryParse(Console.ReadLine(), out input)) {

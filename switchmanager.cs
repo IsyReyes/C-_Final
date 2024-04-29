@@ -61,6 +61,9 @@ private string choice = " ";
 		case "12":
 		EmployeeCalculator.CalculateHourlyWage();
 		break;
+		case "13":
+		TonsCalculator.TonsRate();
+		break;
 		case "Salir":
 		break;
 		default:
