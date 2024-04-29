@@ -24,6 +24,11 @@ public class Options {
         Console.WriteLine("15. Calcular descuento por artículo.");
         Console.WriteLine("16. Calcular total a pagar por camisas.");
         Console.WriteLine("17. Calcular descuento en supermercado.");
+		Console.WriteLine("18. Imprimir números solo si son positivos con un loop.");
+		Console.WriteLine("19. Obtén la tabla de multiplicar de un número.");
+		Console.WriteLine("20. Obtener el factorial de un número.");
+
+
 
 
 
