@@ -100,6 +100,9 @@ private string choice = " ";
 		case "25":
 		CoolStair.LeftSideStair();
 		break;
+		case "26":
+		SequenceOfActions.SequenceUntil23();
+		break;
 		case "Salir":
 		break;
 		default:

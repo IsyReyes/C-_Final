@@ -32,6 +32,8 @@ public class Options {
 		Console.WriteLine("23. Imprimir los primeros 30 números en la serie de Fibonacci.");
 		Console.WriteLine("24. Verificar si un número pertenece a la serie de Fibonacci.");
 		Console.WriteLine("25. Imprimir una escalerita perrona con una altura que tú elijas!!");
+		Console.WriteLine("26. Imprimir una secuencia de números hasta el 23");
+
 
 
 
