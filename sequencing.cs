@@ -5,7 +5,7 @@ using System.Runtime.ExceptionServices;
 public class SequenceOfActions{
 
 
-public static void SequenceUntil23() {
+    public static void SequenceUntil23() {
         int num = 1;
         bool incrementByFour = true;
 
@@ -25,4 +25,22 @@ public static void SequenceUntil23() {
 
         Console.WriteLine();
     }
+
+    public static void SequenceAddEvens(){
+
+        int addBox = 0;
+
+        for (int i = 1; i <= 100; i++){
+
+            if (i % 2 == 0){ 
+            addBox += i;
+            }
+        }
+
+        Console.WriteLine($"La suma total de números pares es: {addBox}");
+
+    }
+
+
+
 }
