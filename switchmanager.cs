@@ -112,6 +112,9 @@ private string choice = " ";
 		case "29":
 		SequenceOfActions.FibonacciUntil10k();
 		break;
+		case "30":
+		Binary.PrintBinary();
+		break;
 		case "Salir":
 		break;
 		default:

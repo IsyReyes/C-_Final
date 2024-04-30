@@ -36,6 +36,7 @@ public class Options {
 		Console.WriteLine("27. Sumar todos los número pares entre el 1 y el 100.");
 		Console.WriteLine("28. Inivierte un número positivo.");
 		Console.WriteLine("29. Sumar los números de Fibonacci entre el 100 y el 10000.");
+		Console.WriteLine("30. Convertir un número decimal en binario.");
 
 
 
