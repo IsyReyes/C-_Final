@@ -88,6 +88,9 @@ private string choice = " ";
 		case "21":
 		Loops.GetHighest();
 		break;
+		case "22":
+		Loops.EvenOrOdd();
+		break;
 		case "Salir":
 		break;
 		default:
