@@ -27,7 +27,9 @@ public class Options {
 		Console.WriteLine("18. Imprimir números solo si son positivos con un loop.");
 		Console.WriteLine("19. Obtén la tabla de multiplicar de un número.");
 		Console.WriteLine("20. Obtener el factorial de un número.");
-		Console.WriteLine("21. Imprimir el número más grande entre varios inputs");
+		Console.WriteLine("21. Imprimir el número más grande entre varios inputs.");
+		Console.WriteLine("22. Imprimir la suma de números pares en impares entre el 300 y 555.");
+
 
 		Console.WriteLine("Salir. Escribe Salir para terminar el programa.");
 

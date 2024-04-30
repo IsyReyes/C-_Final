@@ -43,26 +43,40 @@ public class Loops{
 Console.WriteLine($"El factorial de {num} es {factorial}");
     }
 
-    public static void GetHighest(){
-
-            int highestNumber = 0;
-            int inputNumber = 0;
+    public static void GetHighest() {
+        int highestNumber = 0;
 
         Console.WriteLine("Hola, vamos a buscar el número más grande!");
-        
-        for (int i = 1; i == 20; i++){
-            Console.WriteLine("Por favor ingresa el número:");
-            
-            
-            
-            inputNumber = Convert.ToInt32(Console.ReadLine());
 
-            if (inputNumber >= highestNumber){
+        for (int i = 1; i <= 20; i++) { 
+            Console.WriteLine("Por favor ingresa un número:");
+
+            int inputNumber = Convert.ToInt32(Console.ReadLine()); 
+
+            if (inputNumber > highestNumber) { 
                 highestNumber = inputNumber;
             }
         }
 
         Console.WriteLine($"El número más alto es {highestNumber}");
-
     }
+
+    public static void EvenOrOdd() {
+    int sumEven = 0;
+    int sumOdd = 0;
+
+    for (int i = 300; i <= 555; i++) {
+        if (i % 2 == 0) {
+            // Suma de números pares
+            sumEven += i;
+        } else {
+            // Suma de números impares
+            sumOdd += i;
+        }
+    }
+
+    Console.WriteLine($"La suma de los números pares entre 300 y 555 es: {sumEven}");
+    Console.WriteLine($"La suma de los números impares entre 300 y 555 es: {sumOdd}");
+}
+
 }
