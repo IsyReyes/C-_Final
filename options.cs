@@ -29,6 +29,11 @@ public class Options {
 		Console.WriteLine("20. Obtener el factorial de un número.");
 		Console.WriteLine("21. Imprimir el número más grande entre varios inputs.");
 		Console.WriteLine("22. Imprimir la suma de números pares en impares entre el 300 y 555.");
+		Console.WriteLine("23. Imprimir los primeros 30 números en la serie de Fibonacci.");
+		Console.WriteLine("24. Verificar si un número pertenece a la serie de Fibonacci.");
+		Console.WriteLine("25. Imprimir una escalerita perrona con una altura que tú elijas!!");
+
+
 
 
 		Console.WriteLine("Salir. Escribe Salir para terminar el programa.");

@@ -91,12 +91,20 @@ private string choice = " ";
 		case "22":
 		Loops.EvenOrOdd();
 		break;
+		case "23":
+		Loops.Fibonacci();
+		break;
+		case "24":
+		Loops.BelongsToFibonacci();
+		break;
+		case "25":
+		CoolStair.LeftSideStair();
+		break;
 		case "Salir":
 		break;
 		default:
-    	Console.WriteLine("Opción no reconocida, intenta de nuevo.");
-    	break;
-		
+    		Console.WriteLine("Opción no reconocida, intenta de nuevo.");
+    		break;
     }
     loopController.loopControl();
 
