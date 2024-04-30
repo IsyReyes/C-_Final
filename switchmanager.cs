@@ -104,7 +104,13 @@ private string choice = " ";
 		SequenceOfActions.SequenceUntil23();
 		break;
 		case "27":
-		SequenceOfActions.SequenceAddEvens();
+		SequenceOfActions.SequenceAddEvensDoWhile();
+		break;
+		case "28":
+		SequenceOfActions.InvertNumber();
+		break;
+		case "29":
+		SequenceOfActions.FibonacciUntil10k();
 		break;
 		case "Salir":
 		break;
