@@ -6,10 +6,9 @@ public class Binary{
 
     public static void PrintBinary(){
         Console.WriteLine("Por favor, ingresa un número decimal para convertirlo a binario:");
-        double decimalNumber = Convert.ToDouble(Console.ReadLine());  // Lee el número decimal del usuario
-
-        string binaryNumber = ConvertDecimalToBinary(decimalNumber);  // Custom method to handle decimal to binary conversion
-        Console.WriteLine($"El número {decimalNumber} en binario es: {binaryNumber}");  // Imprime el número en binario
+        double decimalNumber = Convert.ToDouble(Console.ReadLine());
+        string binaryNumber = ConvertDecimalToBinary(decimalNumber);  // decimal handler for binary conversion
+        Console.WriteLine($"El número {decimalNumber} en binario es: {binaryNumber}");  // printing non binary
     }
 
     private static string ConvertDecimalToBinary(double decimalNumber)
@@ -42,7 +41,6 @@ public class Binary{
                 frac = r;
             }
         }
-
         return binary.ToString() == "" ? "0" : binary.ToString();
     }
 
