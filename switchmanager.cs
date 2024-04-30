@@ -103,6 +103,9 @@ private string choice = " ";
 		case "26":
 		SequenceOfActions.SequenceUntil23();
 		break;
+		case "27":
+		SequenceOfActions.SequenceAddEvens();
+		break;
 		case "Salir":
 		break;
 		default:
