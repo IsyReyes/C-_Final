@@ -117,8 +117,4 @@ Console.WriteLine($"El factorial de {num} es {factorial}");
             Console.WriteLine($"{num} no pertenece a la serie de Fibonacci.");
         }
     }
-
-
-
-
 }
