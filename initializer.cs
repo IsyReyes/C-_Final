@@ -10,7 +10,8 @@ public class Initializer {
 		// SayHi sayHi = new SayHi();
 		// sayHi.Salute();
 
-		Arrays.ArrayEvensAndOdds();
+		Arrays.ArrayMaxMin();
+
 	}
 }
 

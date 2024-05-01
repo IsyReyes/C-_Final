@@ -118,6 +118,15 @@ private string choice = " ";
 		case "31":
 		Arrays.ArrayEvensAndOdds();
 		break;
+		case "32":
+		Arrays.ShiftArrays();
+		break;
+		case "33":
+		Arrays.ArrayComparison();
+		break;
+		case "34":
+		Arrays.ArrayMaxMin();
+		break;
 		case "Salir":
 		break;
 		default:

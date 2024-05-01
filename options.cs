@@ -38,6 +38,10 @@ public class Options {
 		Console.WriteLine("29. Sumar los números de Fibonacci entre el 100 y el 10000.");
 		Console.WriteLine("30. Convertir un número decimal en binario.");
 		Console.WriteLine("31. Meter pares e impares en arreglos separados.");
+		Console.WriteLine("32. Recorrer los elementos de un arreglo de N longitud un índice hacia la derecha.");
+		Console.WriteLine("33. Comparar las dos mitades de un arreglo haciendo una suma de cada una.");
+		Console.WriteLine("34. Crear un array con 100 valores random, y luego encontrar el mayor y el menor.");
+
 
 
 
