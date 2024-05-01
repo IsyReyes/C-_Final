@@ -115,6 +115,9 @@ private string choice = " ";
 		case "30":
 		Binary.PrintBinary();
 		break;
+		case "31":
+		Arrays.ArrayEvensAndOdds();
+		break;
 		case "Salir":
 		break;
 		default:
