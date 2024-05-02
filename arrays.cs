@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ConsoleTables;
 
 public class Arrays{
 
@@ -40,8 +41,15 @@ public class Arrays{
             }
         }
 
-        Console.WriteLine("Pares: " + string.Join(", ", evens));
-        Console.WriteLine("Impares: " + string.Join(", ", odds));
+        var table = new ConsoleTable("Even Numbers", "Odd Numbers");
+        int maxRows = Math.Max(evens.Length, odds.Length);
+        for (int i = 0; i < maxRows; i++)
+        {
+            string even = i < evens.Length ? evens[i].ToString() : "";
+            string odd = i < odds.Length ? odds[i].ToString() : "";
+            table.AddRow(even, odd);
+        }
+        table.Write();
     }
 
     public static void ShiftArrays()
@@ -147,6 +155,7 @@ public class Arrays{
                 min = array[i];
             }
         }
+
             Console.WriteLine("El número mayor es: " + max);
             Console.WriteLine("El número menor es: " + min);
     }
