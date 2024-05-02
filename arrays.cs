@@ -95,13 +95,9 @@ public class Arrays{
 
     public static void ArrayComparison()
     {
-        int[] array = new int[100];
-        Random rand = new Random();
 
-        for (int i = 0; i < array.Length; i++)
-        {
-            array[i] = rand.Next(1, 101);  // pone números random del 1 al 100 dentro de un nuevo array, .Next es para q no se salga de lo que tú le digas entre los paréntesis como sus argumentos
-        }
+        int[] array = GenerateRandomArray(100, 1, 101);
+
 
         int firstHalfSum = 0;//1era mitad
         int secondHalfSum = 0;//2da mitad
@@ -142,13 +138,8 @@ public class Arrays{
 
     public static void ArrayMaxMin(){
 
-        int[] array = new int[100];
-        Random rand = new Random();
 
-        for (int i = 0; i < array.Length; i++)
-        {
-            array[i] = rand.Next(1, 15000);
-        }
+        int[] array = GenerateRandomArray(100, 1, 15000);
 
         Console.WriteLine("Array: " + string.Join(", ", array));
 
@@ -164,11 +155,21 @@ public class Arrays{
             }
         }
 
-
         var table = new ConsoleTable("Número Mayor", "Número Menor");
         table.AddRow($"El número mayor es {max}", $"El número menor es {min}");
         table.Write(Format.Alternative);
 
+    }
+
+
+    private static int[] GenerateRandomArray(int length, int minValue, int maxValue){
+        int[] array = new int[length];
+        Random rand = new Random();
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = rand.Next(minValue, maxValue);
+        }
+        return array;
     }
 
 
