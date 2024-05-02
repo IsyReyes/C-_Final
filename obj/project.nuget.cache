@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nHkRQm0hCYxvhEorJMhzCfELzsN4PfkC9k85iy1TZLPSvEKSt1fymvslTZJTnEvxqSGD0TeytA+EPsGcx8j80w==",
+  "dgSpecHash": "WyK9rwaHgZuo0wZ+RJEY0D73xbXXKZKQsbYefQ+EAltIyzrfuwKprOf6Pv58qAs0ls8BA78mgOt99tmXK/4WeA==",
   "success": true,
   "projectFilePath": "F:\\C#_Final\\C#_Final.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\IsyRe\\.nuget\\packages\\consoletables\\2.6.1\\consoletables.2.6.1.nupkg.sha512"
+  ],
   "logs": []
 }
