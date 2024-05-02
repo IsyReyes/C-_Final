@@ -41,7 +41,7 @@ public class Arrays{
             }
         }
 
-        var table = new ConsoleTable("Even Numbers", "Odd Numbers");
+        var table = new ConsoleTable("Números Pares", "Números Impares");
         int maxRows = Math.Max(evens.Length, odds.Length);
         for (int i = 0; i < maxRows; i++)
         {
@@ -49,7 +49,7 @@ public class Arrays{
             string odd = i < odds.Length ? odds[i].ToString() : "";
             table.AddRow(even, odd);
         }
-        table.Write();
+        table.Write(Format.Alternative);
     }
 
     public static void ShiftArrays()
@@ -81,11 +81,16 @@ public class Arrays{
             array[0] = last; // Pone el primer elemento en la última posición, que definimos anteriormente
         }
         
-        Console.WriteLine("Shifted Array:");
+
+        var table = new ConsoleTable("Shifted Array");
         foreach (int num in array)
         {
-            Console.WriteLine(num);
+
+            string shiftedArray= Convert.ToString(num);
+            table.AddRow(shiftedArray);
         }
+        table.Write(Format.Alternative);
+
     }
 
     public static void ArrayComparison()
@@ -106,30 +111,33 @@ public class Arrays{
         {
             firstHalfSum += array[i];
         }
-        Console.WriteLine(firstHalfSum);
 
         // calc la suma de la 2da mitad
         for (int i = array.Length / 2; i < array.Length; i++) //EMPIEZA el for en la mitad, y lo hace hasta el final, o sea la segunda mitad
         {
             secondHalfSum += array[i];
         }
-        Console.WriteLine(secondHalfSum);
 
 
         // compara las sumas y te da los resultados
         //TENKIU TENKIUU
+        var table = new ConsoleTable("Suma 1era Mitad", "Suma 2da Mitad", "Mitad Ganadora");
+
         if (firstHalfSum > secondHalfSum)
         {
-            Console.WriteLine("La suma de la primera mitad del arreglo es mayor a la de la segunda mitad.");
+            table.AddRow(firstHalfSum, secondHalfSum, "La suma de la primera mitad del arreglo es mayor a la de la segunda mitad.");
         }
         else if (firstHalfSum < secondHalfSum)
         {
-            Console.WriteLine("La suma de la primera mitad del arreglo es menor a la de la segunda mitad.");
+            table.AddRow(firstHalfSum, secondHalfSum, "La suma de la primera mitad del arreglo es menor a la de la segunda mitad.");
         }
         else
         {
-            Console.WriteLine("La suma de las dos mitades es igual");
+            table.AddRow(firstHalfSum, secondHalfSum, "La suma de las dos mitades es igual");
         }
+
+        table.Write(Format.Alternative);
+
     }
 
     public static void ArrayMaxMin(){
@@ -156,8 +164,11 @@ public class Arrays{
             }
         }
 
-            Console.WriteLine("El número mayor es: " + max);
-            Console.WriteLine("El número menor es: " + min);
+
+        var table = new ConsoleTable("Número Mayor", "Número Menor");
+        table.AddRow($"El número mayor es {max}", $"El número menor es {min}");
+        table.Write(Format.Alternative);
+
     }
 
 
