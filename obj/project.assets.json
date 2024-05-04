@@ -45,11 +45,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C-_Final\\C#_Final.csproj",
+      "projectUniqueName": "F:\\C#_Final\\C#_Final.csproj",
       "projectName": "C#_Final",
-      "projectPath": "C:\\C-_Final\\C#_Final.csproj",
+      "projectPath": "F:\\C#_Final\\C#_Final.csproj",
       "packagesPath": "C:\\Users\\IsyRe\\.nuget\\packages\\",
-      "outputPath": "C:\\C-_Final\\obj\\",
+      "outputPath": "F:\\C#_Final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IsyRe\\AppData\\Roaming\\NuGet\\NuGet.Config"
