@@ -5,6 +5,8 @@ using ConsoleTables;
 
 public class Arrays{
 
+    private static Random rand = new Random();
+
     public static void ArrayEvensAndOdds(){
         int[] numbers = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
@@ -139,7 +141,7 @@ public class Arrays{
         double average = addingUp / (double)array.Length;
 
         var table = new ConsoleTable("Total", "Promedio");
-        table.AddRow($"La suma del arreglo es: {addingUp}", $"El promedio es: {average}");
+        table.AddRow(addingUp,average);
         table.Write(Format.Alternative);
 
     }
@@ -147,7 +149,6 @@ public class Arrays{
 
     private static int[] GenerateRandomArray(int length, int minValue, int maxValue){
         int[] array = new int[length];
-        Random rand = new Random();
         for (int i = 0; i < array.Length; i++){
             array[i] = rand.Next(minValue, maxValue);
         }
@@ -163,14 +164,17 @@ public class Arrays{
         return sum;
     }
 
+    // This method performs a right circular shift on an array. It temporarily stores the last element of the array,
+    // then shifts all elements one position to the right in a backward loop, and finally places the originally last element into the first position.
+    // The operation is performed only if the array is non-empty to avoid unnecessary processing and potential errors with empty arrays.
     private static void ShiftRight(int[] array){
         if (array.Length > 0)
         {
-            int last = array[array.Length - 1];
+            int last = array[array.Length - 1]; // Temporarily store the last element
             for (int i = array.Length - 1; i > 0; i--){
-                array[i] = array[i - 1];
+                array[i] = array[i - 1]; // Move each element one position to the right
             }
-            array[0] = last;
+            array[0] = last; // Set the first element to the originally last element
         }
     }
 }
