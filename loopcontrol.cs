@@ -21,7 +21,9 @@ public class LoopController(){
 				Console.WriteLine("¡Gracias por usar el Chatbot de primer semestre! Que tengas un buen día.");
 				Environment.Exit(0);
 				break;
-
+			default:
+			ErrorHandler.SafeParseInt("Por favor introduce un carácter válido. Esta entrada solo acepta números.");
+			break;
 		}
 	}
 }

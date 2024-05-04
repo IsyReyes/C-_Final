@@ -127,6 +127,12 @@ private string choice = " ";
 		case "34":
 		Arrays.ArrayMaxMin();
 		break;
+		case "35":
+		Arrays.ArrayABC();
+		break;
+		case "36":
+		Arrays.ArrayAverage();
+		break;
 		case "Salir":
 		break;
 		default:
