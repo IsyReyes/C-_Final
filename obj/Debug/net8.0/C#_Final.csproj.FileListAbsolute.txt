@@ -31,3 +31,6 @@ c:\C-_Final\obj\Debug\net8.0\ref\C#_Final.dll
 F:\C#_Final\bin\Debug\net8.0\ConsoleTables.dll
 F:\C#_Final\obj\Debug\net8.0\C#_Final.csproj.AssemblyReference.cache
 F:\C#_Final\obj\Debug\net8.0\C#_Final.csproj.Up2Date
+C:\C-_Final\bin\Debug\net8.0\ConsoleTables.dll
+C:\C-_Final\obj\Debug\net8.0\C#_Final.csproj.AssemblyReference.cache
+C:\C-_Final\obj\Debug\net8.0\C#_Final.csproj.Up2Date
