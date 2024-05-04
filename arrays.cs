@@ -130,11 +130,18 @@ public class Arrays{
 
         int[] array = GenerateRandomArray(100, 1, 101);
 
+        int addingUp = 0;
+
         foreach (int num in array){
-            int sumador = sumador + num;
+            addingUp+=num;
         }
 
+        double average = addingUp / (double)array.Length;
+
+        var table = new ConsoleTable("Total", "Promedio");
+        table.AddRow($"La suma del arreglo es: {addingUp}", $"El promedio es: {average}");
         table.Write(Format.Alternative);
+
     }
 
 

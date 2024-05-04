@@ -11,7 +11,7 @@ public class Initializer {
 		// SayHi sayHi = new SayHi();
 		// sayHi.Salute();
 
-		Arrays.ArrayABC();
+		Arrays.ArrayAverage();
 
 	}
 }
