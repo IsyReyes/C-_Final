@@ -8,8 +8,10 @@ public class Initializer {
 
 		Console.WriteLine("Inicializando programa.");
 
-		SayHi sayHi = new SayHi();
-		sayHi.Salute();
+		// SayHi sayHi = new SayHi();
+		// sayHi.Salute();
+
+		Arrays.ArrayABC();
 
 	}
 }

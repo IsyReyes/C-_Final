@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using ConsoleTables;
 
 public class Arrays{
@@ -36,7 +37,7 @@ public class Arrays{
     }
 
     public static void ShiftArrays(){
-        List<int> numbers = new List<int>(); 
+        List<int> numbers = new List<int>();
         Console.WriteLine("Ingresa hasta 30 números o ingresa un 0 para continuar.");
 
         while (true)
@@ -104,6 +105,35 @@ public class Arrays{
 
         var table = new ConsoleTable("Número Mayor", "Número Menor");
         table.AddRow($"El número mayor es {max}", $"El número menor es {min}");
+        table.Write(Format.Alternative);
+    }
+
+    public static void ArrayABC() {
+        int[] arrayA = GenerateRandomArray(20, 1, 500);
+        int[] arrayB = GenerateRandomArray(20, 1, 500);
+
+        int[] arrayC = new int[20];
+
+
+        for (int i = 0; i < arrayA.Length; i++) {
+            arrayC[i] = arrayA[i] + arrayB[arrayB.Length - 1 - i];
+        }
+
+        var table = new ConsoleTable("Index", "A", "B", "A + B");
+        for (int i = 0; i < arrayA.Length; i++) {
+            table.AddRow(i, arrayA[i], arrayB[arrayB.Length - 1 - i], arrayC[i]);
+        }
+        table.Write(Format.Alternative);
+}
+
+    public static void ArrayAverage(){
+
+        int[] array = GenerateRandomArray(100, 1, 101);
+
+        foreach (int num in array){
+            int sumador = sumador + num;
+        }
+
         table.Write(Format.Alternative);
     }
 
