@@ -40,11 +40,12 @@ public class Arrays{
 
     public static void ShiftArrays(){
         List<int> numbers = new List<int>();
+
         Console.WriteLine("Ingresa hasta 30 números o ingresa un 0 para continuar.");
 
         while (true)
         {
-            int input = int.Parse(Console.ReadLine());
+            int input = ErrorHandler.SafeParseInt("Entrada numérica:");
             
             if (input == 0 || numbers.Count == 30)
             {
@@ -165,8 +166,10 @@ public class Arrays{
     }
 
     // This method performs a right circular shift on an array. It temporarily stores the last element of the array,
-    // then shifts all elements one position to the right in a backward loop, and finally places the originally last element into the first position.
-    // The operation is performed only if the array is non-empty to avoid unnecessary processing and potential errors with empty arrays.
+    // then shifts all elements one position to the right in a backward loop, 
+    // and finally places the originally last element into the first position.
+    // The operation is performed only if the array is non-empty to avoid unnecessary processing 
+    // and potential errors with empty arrays.
     private static void ShiftRight(int[] array){
         if (array.Length > 0)
         {

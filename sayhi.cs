@@ -14,8 +14,7 @@ public class SayHi{
 
 		Console.WriteLine("Gracias " + username + ", a continuación te presentaré una serie de opciones que podrás elegir para realizar diferentes tareas");
 
-		//instantiate options and print them
-		Options options = new Options();
+		//print options(referr to Options class)
 		Options.printOptions();
 	}
 }

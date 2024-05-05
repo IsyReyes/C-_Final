@@ -43,6 +43,8 @@ public class Options {
 		Console.WriteLine("34. Crear un array con 100 valores random, y luego encontrar el mayor y el menor.");
 		Console.WriteLine("35. Sumar el 1er índice de un arreglo A con un arreglo B, metiendo el resultado en un arreglo C.");
 		Console.WriteLine("36. Obtener el promerio de un arreglo de 100 elementos del tipo int.");
+		Console.WriteLine("0. Ingresa 0 para salir.");
+
 
 
 

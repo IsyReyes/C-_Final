@@ -8,9 +8,8 @@ public class Loops{
         Console.WriteLine("Vamos a verificar si tus números son positivos");
 
         for (int i = 1; i <= 10; i++){
-            Console.WriteLine("Por favor ingresa el número:");
 
-            int num = Convert.ToInt32(Console.ReadLine());
+            int num = ErrorHandler.SafeParseInt("Por favor ingresa el número:");
 
             if (num >= 0){
                 Console.WriteLine(num);
