@@ -2,6 +2,7 @@ using System;
 
 public static class ErrorHandler
 {
+    //This method utilizes TryParse to make sure the input can be converted succesfully to an integer, used later in the switch cases.
     public static int SafeParseInt(string prompt)
     {
         int result;
@@ -32,5 +33,4 @@ public static class ErrorHandler
         } while (true);
     }
 
-    // You can add more methods for other data types or specific validation rules
 }
