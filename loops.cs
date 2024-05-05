@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ConsoleTables;
 
 public class Loops{
 
@@ -12,9 +13,14 @@ public class Loops{
             int num = ErrorHandler.SafeParseInt("Por favor ingresa el número:");
 
             if (num >= 0){
-                Console.WriteLine(num);
+                var table = new ConsoleTable("Confirmación");
+                table.AddRow($"El número {num} es positivo.");
+                table.Write(Format.Alternative);
             }else{
-                Console.WriteLine("El número es negativo, es imposible imprimirlo.");
+                var table = new ConsoleTable("Error");
+                table.AddRow($"El número {num} es negativo.");
+                table.Write(Format.Alternative);
+
             }
         }
     }
