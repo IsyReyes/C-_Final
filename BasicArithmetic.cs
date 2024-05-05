@@ -1,126 +1,99 @@
 using System;
 using System.Runtime.CompilerServices;
+using ConsoleTables;
 
 public class BasicArithmetic
 {
-    private int num1 = 0;
-    private int num2 = 0;
-    private int num3 = 0;
-    private int num4 = 0;
-
-
-//taking  error handler out of loops 
-    private static bool ErrorHandling(bool isNumber)
-    {
-        if (!isNumber)
-        {
-            Console.WriteLine("Se detectó una respuesta que no es válida, intentemos de nuevo desde el inicio, recuerda usar solo números.");
-            return true;
-        }
-        return false;
-    }
 
 //Sum of two numbers 
-    public void TwoNumbers()
+    public static void TwoNumbers()
     {
-        while (true)
-        {
-            Console.WriteLine("Por favor ingresa tu primer número");
-            if (ErrorHandling(int.TryParse(Console.ReadLine(), out num1)))
-                continue;
 
-            Console.WriteLine("Por favor ingresa tu segundo número");
-            if (ErrorHandling(int.TryParse(Console.ReadLine(), out num2)))
-                continue;
+        int num1 = ErrorHandler.SafeParseInt("Por favor ingresa tu primer número");
 
-            Console.WriteLine("Gracias, la suma de estos dos números es " + (num1 + num2));
-            break; // Break the loop on success
-        }
+        int num2 = ErrorHandler.SafeParseInt("Por favor ingresa tu segundo número");
+
+        var table = new ConsoleTable("1er Número", "2do Número", "Suma");
+        table.AddRow(num1, num2, num1+num2);
+        table.Write(Format.Alternative);
     }
 
-//Sum of three numbers
-    public void ThreeNumbers()
+    public static void ThreeNumbers()
     {
-        while (true)
-        {
-            Console.WriteLine("Por favor ingresa tu primer número");
-            if (ErrorHandling(int.TryParse(Console.ReadLine(), out num1)))
-                continue;
 
-            Console.WriteLine("Por favor ingresa tu segundo número");
-            if (ErrorHandling(int.TryParse(Console.ReadLine(), out num2)))
-                continue;
+        int num1 = ErrorHandler.SafeParseInt("Por favor ingresa tu primer número");
 
-            Console.WriteLine("Por favor ingresa tu tercer número");
-            if (ErrorHandling(int.TryParse(Console.ReadLine(), out num3)))
-                continue;
+        int num2 = ErrorHandler.SafeParseInt("Por favor ingresa tu segundo número");
 
-            Console.WriteLine("Gracias, la suma de estos tres números es " + (num1 + num2 + num3));
-            break; // Break the loop on success
-        }
+        int num3 = ErrorHandler.SafeParseInt("Por favor ingresa tu tercer número");
+
+        int sum = num1 + num2 + num3;
+
+        var table = new ConsoleTable("1er Número", "2do Número", "3er Número", "Suma");
+        table.AddRow(num1, num2, num3, sum);
+        table.Write(Format.Alternative);
+
     }
 
-//sum, substrac, product and division 
-    public void multiCalculate(){
+    public  static void multiCalculate(){
         Console.WriteLine("Acabas de accesar a la multicalculadora. Tomaremos 4 números y obtendremos la suma, resta, producto y divisón de estos.");
 
-        while (true) {
-            Console.WriteLine("Por favor ingresa tu primer número");
-            if (ErrorHandling(int.TryParse(Console.ReadLine(), out num1)))
-                continue;
+        int num1 = ErrorHandler.SafeParseInt("Por favor ingresa tu primer número");
 
-            Console.WriteLine("Por favor ingresa tu segundo número");
-            if (ErrorHandling(int.TryParse(Console.ReadLine(), out num2)))
-                continue;
+        int num2 = ErrorHandler.SafeParseInt("Por favor ingresa tu segundo número");
 
-            Console.WriteLine("Por favor ingresa tu tercer número");
-            if (ErrorHandling(int.TryParse(Console.ReadLine(), out num3)))
-                continue;
+        int num3 = ErrorHandler.SafeParseInt("Por favor ingresa tu tercer número");
 
-            Console.WriteLine("Por favor ingresa tu cuarto número");
-            if (ErrorHandling(int.TryParse(Console.ReadLine(), out num4)))
-                continue;
+        int num4 = ErrorHandler.SafeParseInt("Por favor ingresa tu cuarto número");
 
-            Console.WriteLine("Gracias, la suma de estos cuatro números es " + (num1 + num2 + num3 + num4));
-            Console.WriteLine("Gracias, la resta de estos cuatro números es " + (num1 - num2 - num3 - num4));
-            Console.WriteLine("El producto de estos números es " + (num1 * num2 * num3 * num4));
-            try{
-            Console.WriteLine("La divisón de estos números es " + (num1 / num2 / num3 / num4)); 
-            }
-            catch (DivideByZeroException) {
-                Console.WriteLine("Se intento dividir por 0, lo que podría resultar en paradojas matemáticas. Ignorando proceso.");
-                break;
-            }
-        break;
-        }
+        int sum  = num1 + num2 + num3 + num4;
+        int difference = num1 - num2 - num3 - num4;
+        int product = num1 * num2 * num3 * num4;
+        string division = DivisionHandler(num1, num2, num3, num4);
+
+        var table = new ConsoleTable("1er Número", "2do Número", "3er Número", "4to Número", "Suma", "Resta", "Multiplicación", "División");
+        table.AddRow(num1, num2, num3, num4, sum, difference, product, division);
+        table.Write(Format.Alternative);
+
     }
 
-//area of a triangle
+
     public static void TriangleArea(){
-        int triangleBase;
-        int triangleHeight;
 
         Console.WriteLine("Muy bien, calculalremos el area de un triángulo. Para esto por favor indica cuál es la base, y la altura a continuación.");
-        Console.WriteLine("Ingresa la base:");
-        triangleBase = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Ingresa la altura:");
-        triangleHeight = Convert.ToInt32(Console.ReadLine());
+        int triangleBase = ErrorHandler.SafeParseInt("Ingresa la base");
+        int triangleHeight = ErrorHandler.SafeParseInt("Ingresa la altura");
 
-        Console.WriteLine("Gracias. El área del tríangulo es " + (triangleBase * triangleHeight / 2));
+        int area = triangleBase * triangleHeight / 2;
+
+        var table = new ConsoleTable("Base", "Altura", "Área");
+        table.AddRow(triangleBase, triangleHeight, area);
+        table.Write(Format.Alternative);
     }
 
-    //number of seconds in given days
+
     public static void SecondsInADay(){
         int secondsInADay = 86400;
-        int numberOfDays;
 
         Console.WriteLine("Perfecto, vamos a calcular cuántos segundos hay en un número determinado de días. Por favor ingresa el número de días a continuación.");
-        Console.WriteLine("Número de días:");
-        numberOfDays = Convert.ToInt32(Console.ReadLine());
+        int numberOfDays = ErrorHandler.SafeParseInt("Número de días:");
 
-        Console.WriteLine("El número de segundos en " + numberOfDays + " día/s son " + (numberOfDays * secondsInADay));
+        var table = new ConsoleTable("Días", "Segundos");
+        table.AddRow(numberOfDays, secondsInADay * numberOfDays);
+        table.Write(Format.Alternative);
+
     }
 
 
+    //Div error handler
+    private static string DivisionHandler(int num1, int num2, int num3, int num4) {
+        try{
+        double result =  (double)num1 / num2 / num3 / num4;
+        return result.ToString("N2");
+        }
+        catch (DivideByZeroException) {
+            return "Se intento dividir por 0, lo que podría resultar en paradojas matemáticas. Ignorando proceso.";
+        }
+    }
 
 }

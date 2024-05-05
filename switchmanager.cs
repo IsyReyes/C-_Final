@@ -21,18 +21,17 @@ private string choice = " ";
 	}
 
 
-	BasicArithmetic basicArithmetic = new BasicArithmetic();
 	LoopController loopController = new LoopController();
 
     switch (choice) {
 		case "1": 
-		basicArithmetic.TwoNumbers();
+		BasicArithmetic.TwoNumbers();
 		break;
 		case "2":
-		basicArithmetic.ThreeNumbers();
+		BasicArithmetic.ThreeNumbers();
 		break;
 		case "3":
-		basicArithmetic.multiCalculate();
+		BasicArithmetic.multiCalculate();
 		break;
 		case "4":
 		BasicArithmetic.TriangleArea();
