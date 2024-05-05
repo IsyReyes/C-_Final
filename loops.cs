@@ -26,26 +26,30 @@ public class Loops{
     }
 
     public static void Multiply(){
-        Console.WriteLine("¡Bienvenido a la multiplicadora 3000! Por favor ingresa un número para obtener su tabla de multiplicar:");
-        int num = Convert.ToInt32(Console.ReadLine());
 
+        int num = ErrorHandler.SafeParseInt("¡Bienvenido a la multiplicadora 3000! Por favor ingresa un número para obtener su tabla de multiplicar:");
+
+        var table2 = new ConsoleTable("Multiplicador", "Resultado");
         for (int i = 1; i <= 10; i++){
 
             int multiplied = num * i;
-            Console.WriteLine($"{num} * {i} = {multiplied}");
+            table2.AddRow(i, multiplied);
         }
+        table2.Write(Format.Alternative);
     }
 
     public static void GetFactorial(){
-        Console.WriteLine("Vamos a sacar el factorial. Por favor ingresa un número:");
-        int num = Convert.ToInt32(Console.ReadLine());
+
+        int num = ErrorHandler.SafeParseInt("Vamos a sacar el factorial. Por favor ingresa un número:");
         int factorial = 1;
 
         for (int i = 1; i <= num; i++) {
             factorial *= i;
         }
 
-Console.WriteLine($"El factorial de {num} es {factorial}");
+        var table = new ConsoleTable("Número", "Factorial");
+        table.AddRow(num, factorial);
+        table.Write(Format.Alternative);
     }
 
     public static void GetHighest() {
@@ -54,34 +58,34 @@ Console.WriteLine($"El factorial de {num} es {factorial}");
         Console.WriteLine("Hola, vamos a buscar el número más grande!");
 
         for (int i = 1; i <= 20; i++) { 
-            Console.WriteLine("Por favor ingresa un número:");
 
-            int inputNumber = Convert.ToInt32(Console.ReadLine()); 
+            int inputNumber = ErrorHandler.SafeParseInt("Por favor ingresa un número:"); 
 
             if (inputNumber > highestNumber) { 
                 highestNumber = inputNumber;
             }
         }
 
-        Console.WriteLine($"El número más alto es {highestNumber}");
+        var table = new ConsoleTable("Número Mayor");
+        table.AddRow(highestNumber);
+        table.Write(Format.Alternative);
     }
 
     public static void EvenOrOdd() {
         int sumEven = 0;
         int sumOdd = 0;
-
+        //this if else condition checks if numbers are evens or odds by setting the modular as the condition.
         for (int i = 300; i <= 555; i++) {
             if (i % 2 == 0) {
-                // Suma de números pares
                 sumEven += i;
             } else {
-                // Suma de números impares
                 sumOdd += i;
             }
         }
 
-        Console.WriteLine($"La suma de los números pares entre 300 y 555 es: {sumEven}");
-        Console.WriteLine($"La suma de los números impares entre 300 y 555 es: {sumOdd}");
+        var table = new ConsoleTable("Suma Pares", "Suma Impares");
+        table.AddRow(sumEven, sumOdd);
+        table.Write(Format.Alternative);
     }
 
     public static void Fibonacci(){
@@ -89,24 +93,29 @@ Console.WriteLine($"El factorial de {num} es {factorial}");
         double r1 = 1;
         double r2 = 1;
 
+        var table = new ConsoleTable("Número", "Fibonacci");
+        table.AddRow(1, r1);
+        table.AddRow(2, r2);
+
+
         Console.WriteLine("1: " + r1);
         Console.WriteLine("2: " + r2); 
 
         for (int i = 3; i <= 30; i++){
-
             double nextFibonacci = r1 + r2;
 
-            Console.WriteLine(i + ": " + nextFibonacci);
+            table.AddRow(i, nextFibonacci);
 
             r1 = r2; 
             r2 = nextFibonacci;
-
         }
+        table.Write(Format.Alternative);
+
     }
 
     public static void BelongsToFibonacci() {
-        Console.WriteLine("Verifiquemos si tu número pertenece a la serie de Fibonacci. A continuación por favor ingresa el número:");
-        int num = Convert.ToInt32(Console.ReadLine());
+
+        int num = ErrorHandler.SafeParseInt("Verifiquemos si tu número pertenece a la serie de Fibonacci. A continuación por favor ingresa el número:");
 
         int check1 = 5 * num * num + 4;
         int check2 = 5 * num * num - 4;
@@ -117,9 +126,12 @@ Console.WriteLine($"El factorial de {num} es {factorial}");
         }
 
         if (IsPerfectSquare(check1) || IsPerfectSquare(check2)) {
-            Console.WriteLine($"{num} pertenece a la serie de Fibonacci.");
+            var table = new ConsoleTable("Positivo");
+            table.AddRow($"{num} pertenece a la serie de Fibonacci.");
+            table.Write(Format.Alternative);
         } else {
-            Console.WriteLine($"{num} no pertenece a la serie de Fibonacci.");
-        }
+            var table = new ConsoleTable("Negativo");
+            table.AddRow($"{num} no pertenece a la serie de Fibonacci.");
+            table.Write(Format.Alternative);        }
     }
 }
