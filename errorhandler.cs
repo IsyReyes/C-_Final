@@ -2,7 +2,7 @@ using System;
 
 public static class ErrorHandler
 {
-    //This method utilizes TryParse to make sure the input can be converted succesfully to an integer, used later in the switch cases.
+
     public static int SafeParseInt(string prompt)
     {
         int result;
@@ -18,7 +18,7 @@ public static class ErrorHandler
         } while (true);
     }
 
-        public static int DoubleSafeParseInte(string prompt)
+    public static double SafeParseDouble(string prompt)
     {
         double result;
         do

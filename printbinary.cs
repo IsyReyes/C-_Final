@@ -5,8 +5,7 @@ using System.Collections.Generic;
 public class Binary{
 
     public static void PrintBinary(){
-        Console.WriteLine("Por favor, ingresa un número decimal para convertirlo a binario:");
-        double decimalNumber = Convert.ToDouble(Console.ReadLine());
+        double decimalNumber = ErrorHandler.SafeParseDouble("Por favor, ingresa un número decimal para convertirlo a binario:");
         string binaryNumber = ConvertDecimalToBinary(decimalNumber);  // decimal handler for binary conversion
         Console.WriteLine($"El número {decimalNumber} en binario es: {binaryNumber}");  // printing non binary
     }
