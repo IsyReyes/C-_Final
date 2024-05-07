@@ -74,7 +74,7 @@ public class Loops{
     public static void EvenOrOdd() {
         int sumEven = 0;
         int sumOdd = 0;
-        //this if else condition checks if numbers are evens or odds by setting the modular as the condition.
+        //this checks if numbers are evens or odds by setting the modular as the condition.
         for (int i = 300; i <= 555; i++) {
             if (i % 2 == 0) {
                 sumEven += i;

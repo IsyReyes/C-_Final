@@ -18,6 +18,21 @@ public static class ErrorHandler
         } while (true);
     }
 
+        public static int DoubleSafeParseInte(string prompt)
+    {
+        double result;
+        do
+        {
+            Console.WriteLine(prompt);
+            string input = Console.ReadLine();
+            if (double.TryParse(input, out result))
+            {
+                return result;//why is this returning an int instead of double??
+            }
+            Console.WriteLine("Por favor introduce un carácter válido. Esta entrada solo acepta números ennteros o decimales.");
+        } while (true);
+    }
+
     public static string RequiredString(string prompt)
     {
         string result;
