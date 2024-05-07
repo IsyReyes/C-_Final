@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ConsoleTables;
 
 public class PassOrFail{
 
@@ -10,14 +11,11 @@ public class PassOrFail{
         int average;
         string status;
 
-        Console.WriteLine("Bienvenido a la calculadora de promedio. Por favir ingresa tu primera calificación:");
-        grade1 = Convert.ToInt32(Console.ReadLine());
+        grade1 = ErrorHandler.SafeParseInt("Bienvenido a la calculadora de promedio. Por favor ingresa tu primera calificación:");
 
-        Console.WriteLine("Gracias, ahora ingresa tu segunda calificación:");
-        grade2 = Convert.ToInt32(Console.ReadLine());
+        grade2 = ErrorHandler.SafeParseInt("Gracias, ahora ingresa tu segunda calificación:");
 
-        Console.WriteLine("Muy bien, ahora ingresa tu tercera calificación:");
-        grade3 = Convert.ToInt32(Console.ReadLine());
+        grade3 = ErrorHandler.SafeParseInt("Muy bien, ahora ingresa tu tercera calificación:");
 
         average = (grade1+grade2+grade3)/3;
 
@@ -27,7 +25,9 @@ public class PassOrFail{
             status = "reprobado";
         }
 
-        Console.WriteLine($"Gracias, tu promedio es: {average}. Estás {status}.");
+        var table = new ConsoleTable("Promedio", "Estatus");
+        table.AddRow(average, status);
+        table.Write(Format.Alternative);
 
     }
 }
