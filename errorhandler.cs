@@ -44,7 +44,7 @@ public static class ErrorHandler
             {
                 return result;
             }
-            Console.WriteLine("Input cannot be empty. Please enter a valid string.");
+            Console.WriteLine("El nombre no puede estar vacío. Por favor introduce una cadena de carácteres válidos.");
         } while (true);
     }
 

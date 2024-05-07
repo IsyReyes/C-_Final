@@ -5,21 +5,20 @@ public class Promos
 {
     public static void PrintDiscount()
     {
-        Console.WriteLine("Vamos a revisar tu descuento! Introduce el nombre del artículo:");
-        string articleName = Console.ReadLine();
+        string articleName = ErrorHandler.RequiredString("Vamos a revisar tu descuento! Introduce el nombre del artículo:");
 
-//01 for 10%, 02 for 20% discount
-        Console.WriteLine("Introduce la clave del artículo:");
-        string key = Console.ReadLine();
+        int key = ErrorHandler.SafeParseInt("Introduce la clave del artículo. La clave puede ser 01 o 02");
 
-        Console.WriteLine("Introduce el precio original del artículo:");
-        double originalPrice = Convert.ToDouble(Console.ReadLine());
+        double originalPrice = ErrorHandler.SafeParseDouble("Introduce el precio original del artículo:");
 
         double discount = 0;
-        if (key == "01")
-            discount = originalPrice * 0.10;
-        else if (key == "02")
-            discount = originalPrice * 0.20;
+
+        if (key != 01 || key != 02){    //Testing this!! 
+            if (key == 01)
+                discount = originalPrice * 0.10;
+            else if (key == 02)
+                discount = originalPrice * 0.20;
+        }
 
         double discountedPrice = originalPrice - discount;
 
