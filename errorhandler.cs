@@ -48,4 +48,22 @@ public static class ErrorHandler
         } while (true);
     }
 
+        //this is specific for the PrintDiscount method. Error handler for verifying key.
+    public static int VerifyKey(string prompt){
+        int key;
+        Console.WriteLine(prompt);
+        do {
+
+            string input = Console.ReadLine();
+
+            if (input == "01" || input == "02") {
+                int.TryParse(input, out key);
+                return key;
+            } else {
+
+                Console.WriteLine("Esta es una clave inválida. Recuerda que las claves solo pueden ser 01 o 02.");
+            }
+        } while (true);
+    }
+
 }
