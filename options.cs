@@ -15,8 +15,8 @@ public class Options {
 		Console.WriteLine("6. Intercambiar los valores de dos variables.");//done
 		Console.WriteLine("7. Buscar el ángulo faltante de un triángulo.");
 		Console.WriteLine("8. Convertir grados de Celsius a Farenheit.");//done
-		Console.WriteLine("9. Operación con variables predefinidas, dale dinero a Juan.");
-		Console.WriteLine("10. Calcular tu edad hasta el año 2030");
+		Console.WriteLine("9. Operación con variables predefinidas, dale dinero a Juan.");//done
+		Console.WriteLine("10. Calcular tu edad hasta el año 2030");//done
 		Console.WriteLine("11. Realizar la ecuación cuadrática con coeficientes predefinidos.");
 		Console.WriteLine("12. Obtener tu sueldo por hora.");
 		Console.WriteLine("13. Calcular costo por traslado de toneladas.");
