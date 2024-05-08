@@ -39,13 +39,14 @@ public class SequenceOfActions{
             i++;  
         } while (i <= 100);
 
-        Console.WriteLine($"La suma total de números pares es: {addBox}");
+        var table = new ConsoleTable("Suma Total de Pares");
+        table.AddRow(addBox);
+        table.Write(Format.Alternative);
     }
 
     public static void InvertNumber()
     {
-        Console.WriteLine("Por favor, ingresa un número para invertir:");
-        int num = Convert.ToInt32(Console.ReadLine());
+        int num = ErrorHandler.SafeParseInt("Por favor, ingresa un número para invertir:");
         int invertedNumber = 0;
 
         do
@@ -55,7 +56,9 @@ public class SequenceOfActions{
             num /= 10;
         } while (num > 0);
 
-        Console.WriteLine($"El número invertido es: {invertedNumber}");
+        var table = new ConsoleTable("Número Invertido");
+        table.AddRow(invertedNumber);
+        table.Write(Format.Alternative);
     }
 
     public static void FibonacciUntil10k()
@@ -66,16 +69,18 @@ public class SequenceOfActions{
 
         for (int nextFibonacci = a + b; nextFibonacci <= 10000; nextFibonacci = a + b)
         {
-            a = b;  // Avanza al siguiente término
-            b = nextFibonacci;  // Establece el nuevo término de Fibonacci
+            a = b;
+            b = nextFibonacci;
 
             if (nextFibonacci >= 100 && nextFibonacci <= 10000)
             {
-                addBox += nextFibonacci;  // Suma solo los términos que están dentro del rango
+                addBox += nextFibonacci;
             }
         }
 
-        Console.WriteLine($"La suma de los términos de la serie de Fibonacci entre 100 y 10,000 es: {addBox}");
+        var table = new ConsoleTable("Suma Fibonaccis Entre 100 y 10,000");
+        table.AddRow(addBox);
+        table.Write(Format.Alternative);
     }
 
 }

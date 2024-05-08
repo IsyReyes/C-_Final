@@ -33,16 +33,16 @@ public class Options {
 		Console.WriteLine("24. Verificar si un número pertenece a la serie de Fibonacci.");//done
 		Console.WriteLine("25. Imprimir una escalerita perrona con una altura que tú elijas!!");//done
 		Console.WriteLine("26. Imprimir una secuencia de números hasta el 23.");//done
-		Console.WriteLine("27. Sumar todos los número pares entre el 1 y el 100.");
-		Console.WriteLine("28. Inivierte un número positivo.");
-		Console.WriteLine("29. Sumar los números de Fibonacci entre el 100 y el 10000.");
-		Console.WriteLine("30. Convertir un número decimal en binario.");
-		Console.WriteLine("31. Meter pares e impares en arreglos separados.");
-		Console.WriteLine("32. Recorrer los elementos de un arreglo de N longitud un índice hacia la derecha.");
-		Console.WriteLine("33. Comparar las dos mitades de un arreglo haciendo una suma de cada una.");
-		Console.WriteLine("34. Crear un array con 100 valores random, y luego encontrar el mayor y el menor.");
-		Console.WriteLine("35. Sumar el 1er índice de un arreglo A con un arreglo B, metiendo el resultado en un arreglo C.");
-		Console.WriteLine("36. Obtener el promerio de un arreglo de 100 elementos del tipo int.");
+		Console.WriteLine("27. Sumar todos los número pares entre el 1 y el 100.");//done
+		Console.WriteLine("28. Inivierte un número positivo.");//done
+		Console.WriteLine("29. Sumar los números de Fibonacci entre el 100 y el 10000.");//done
+		Console.WriteLine("30. Convertir un número decimal en binario.");//done
+		Console.WriteLine("31. Meter pares e impares en arreglos separados.");//done
+		Console.WriteLine("32. Recorrer los elementos de un arreglo de N longitud un índice hacia la derecha.");//done
+		Console.WriteLine("33. Comparar las dos mitades de un arreglo haciendo una suma de cada una.");//done
+		Console.WriteLine("34. Crear un array con 100 valores random, y luego encontrar el mayor y el menor.");//done
+		Console.WriteLine("35. Sumar el 1er índice de un arreglo A con un arreglo B, metiendo el resultado en un arreglo C.");//done
+		Console.WriteLine("36. Obtener el promerio de un arreglo de 100 elementos del tipo int.");//done
 		Console.WriteLine("0. Ingresa 0 para salir.");
 
 
