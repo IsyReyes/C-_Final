@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class Quadratic
 {
+    //this method has processes only usable if a, b abnd c are inputs for scalability.
     public static void QuadraticEquation()
     {
         int a = 1;

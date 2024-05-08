@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.ExceptionServices;
+using ConsoleTables;
 
 public class SequenceOfActions{
 
@@ -9,21 +10,22 @@ public class SequenceOfActions{
         int num = 1;
         bool incrementByFour = true;
 
+        var table = new ConsoleTable("Secuencia Hasta 23");
+
         do {
-            Console.Write(num);
+            table.AddRow(num);
+
             int nextIncrement = incrementByFour ? 4 : 2;
 
             if (num + nextIncrement > 23) {
                 break;
             }
 
-            Console.Write(", ");
             num += nextIncrement;
-            incrementByFour = !incrementByFour;
+            incrementByFour = !incrementByFour; //make it once, then ignore changing flag, repeat.
 
         } while (num <= 23);
-
-        Console.WriteLine();
+        table.Write(Format.Alternative);
     }
 
     public static void SequenceAddEvensDoWhile() {

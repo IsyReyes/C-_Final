@@ -17,22 +17,22 @@ public class Options {
 		Console.WriteLine("8. Convertir grados de Celsius a Farenheit.");//done
 		Console.WriteLine("9. Operación con variables predefinidas, dale dinero a Juan.");//done
 		Console.WriteLine("10. Calcular tu edad hasta el año 2030");//done
-		Console.WriteLine("11. Realizar la ecuación cuadrática con coeficientes predefinidos.");
-		Console.WriteLine("12. Obtener tu sueldo por hora.");
-		Console.WriteLine("13. Calcular costo por traslado de toneladas.");
-		Console.WriteLine("14. Saber si estás aprobado o reprobado.");
-        Console.WriteLine("15. Calcular descuento por artículo.");
-        Console.WriteLine("16. Calcular total a pagar por camisas.");
-        Console.WriteLine("17. Calcular descuento en supermercado.");
-		Console.WriteLine("18. Imprimir números solo si son positivos con un loop.");
-		Console.WriteLine("19. Obtén la tabla de multiplicar de un número.");
-		Console.WriteLine("20. Obtener el factorial de un número.");
-		Console.WriteLine("21. Imprimir el número más grande entre varios inputs.");
-		Console.WriteLine("22. Imprimir la suma de números pares en impares entre el 300 y 555.");
-		Console.WriteLine("23. Imprimir los primeros 30 números en la serie de Fibonacci.");
-		Console.WriteLine("24. Verificar si un número pertenece a la serie de Fibonacci.");
-		Console.WriteLine("25. Imprimir una escalerita perrona con una altura que tú elijas!!");
-		Console.WriteLine("26. Imprimir una secuencia de números hasta el 23.");
+		Console.WriteLine("11. Realizar la ecuación cuadrática con coeficientes predefinidos.");//done
+		Console.WriteLine("12. Obtener tu sueldo por hora.");//done
+		Console.WriteLine("13. Calcular costo por traslado de toneladas.");//done, but not very modular
+		Console.WriteLine("14. Saber si estás aprobado o reprobado.");//done
+        Console.WriteLine("15. Calcular descuento por artículo.");//done
+        Console.WriteLine("16. Calcular total a pagar por camisas.");//done
+        Console.WriteLine("17. Calcular descuento en supermercado.");//done
+		Console.WriteLine("18. Imprimir números solo si son positivos con un loop.");//done
+		Console.WriteLine("19. Obtén la tabla de multiplicar de un número.");//done
+		Console.WriteLine("20. Obtener el factorial de un número.");//done
+		Console.WriteLine("21. Imprimir el número más grande entre varios inputs.");//done
+		Console.WriteLine("22. Imprimir la suma de números pares en impares entre el 300 y 555.");//done
+		Console.WriteLine("23. Imprimir los primeros 30 números en la serie de Fibonacci.");//done
+		Console.WriteLine("24. Verificar si un número pertenece a la serie de Fibonacci.");//done
+		Console.WriteLine("25. Imprimir una escalerita perrona con una altura que tú elijas!!");//done
+		Console.WriteLine("26. Imprimir una secuencia de números hasta el 23.");//done
 		Console.WriteLine("27. Sumar todos los número pares entre el 1 y el 100.");
 		Console.WriteLine("28. Inivierte un número positivo.");
 		Console.WriteLine("29. Sumar los números de Fibonacci entre el 100 y el 10000.");
