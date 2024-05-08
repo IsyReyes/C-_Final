@@ -12,7 +12,7 @@ public class Options {
 		Console.WriteLine("3. Multicálculo para 4 números.");//done
 		Console.WriteLine("4. Calcular la base de un triángulo.");//done
 		Console.WriteLine("5. Calcular cuántos segundos hay en X número de días.");//done
-		Console.WriteLine("6. Intercambiar los valores de dos variables.");
+		Console.WriteLine("6. Intercambiar los valores de dos variables.");//done
 		Console.WriteLine("7. Buscar el ángulo faltante de un triángulo.");
 		Console.WriteLine("8. Convertir grados de Celsius a Farenheit.");//done
 		Console.WriteLine("9. Operación con variables predefinidas, dale dinero a Juan.");
