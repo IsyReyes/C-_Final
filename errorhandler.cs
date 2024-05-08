@@ -27,7 +27,7 @@ public static class ErrorHandler
             string input = Console.ReadLine();
             if (double.TryParse(input, out result))
             {
-                return result;//why is this returning an int instead of double??
+                return result;
             }
             Console.WriteLine("Por favor introduce un carácter válido. Esta entrada solo acepta números ennteros o decimales.");
         } while (true);

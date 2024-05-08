@@ -7,18 +7,17 @@ public class Promos
     {
         string articleName = ErrorHandler.RequiredString("Vamos a revisar tu descuento! Introduce el nombre del artículo:");
 
-        int key = ErrorHandler.SafeParseInt("Introduce la clave del artículo. La clave puede ser 01 o 02");
+        int key = VerifyKey("Introduce la clave del artículo. La clave puede ser 01 o 02");
 
         double originalPrice = ErrorHandler.SafeParseDouble("Introduce el precio original del artículo:");
 
         double discount = 0;
 
-        if (key != 01 || key != 02){    //Testing this!! 
+            //Testing this!! 
             if (key == 01)
                 discount = originalPrice * 0.10;
             else if (key == 02)
                 discount = originalPrice * 0.20;
-        }
 
         double discountedPrice = originalPrice - discount;
 
@@ -64,5 +63,23 @@ public class Promos
         Console.WriteLine($"Total de la compra: ${totalPurchase}");
         Console.WriteLine($"Descuento aplicado: ${discount}, felicidades!");
         Console.WriteLine($"Total con descuento: ${discountedTotal}");
+    }
+
+    //this is for the PrintDiscount method. Error handler for verifying key.
+    private static int VerifyKey(string prompt){
+        int key;
+        Console.WriteLine(prompt);
+        do {
+
+            string input = Console.ReadLine();
+
+            if (input == "01" || input == "02") {
+                key = int.Parse(input);
+                return key;
+            } else {
+
+                Console.WriteLine("Esta es una clave inválida. Recuerda que las claves solo pueden ser 01 o 02.");
+            }
+        } while (true);
     }
 }
