@@ -58,16 +58,6 @@ public class Options {
 
 		Console.WriteLine("0. Ingresa 0 para salir.");
 
-
-
-
-
-
-
-
-
-
-
 		Console.WriteLine("Salir. Escribe Salir para terminar el programa.");
 
 		SwitchManager switchManager = new SwitchManager();
