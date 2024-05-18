@@ -1,6 +1,7 @@
 using System;
 using System.Text;
 using System.Collections.Generic;
+using ConsoleTables;
 
 public class Binary{
 
@@ -8,6 +9,10 @@ public class Binary{
         double decimalNumber = ErrorHandler.SafeParseDouble("Por favor, ingresa un número decimal para convertirlo a binario:");
         string binaryNumber = ConvertDecimalToBinary(decimalNumber);  // decimal handler for binary conversion
         Console.WriteLine($"El número {decimalNumber} en binario es: {binaryNumber}");  // printing non binary
+
+        var table = new ConsoleTable("Número Decimal", "Número Binario");
+        table.AddRow(decimalNumber, binaryNumber);
+        table.Write(Format.Alternative);
     }
 
     private static string ConvertDecimalToBinary(double decimalNumber)
