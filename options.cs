@@ -45,7 +45,16 @@ public class Options {
 		Console.WriteLine("36. Obtener el promedio de un arreglo de 100 elementos del tipo int.");//done
 		Console.WriteLine("37. Imprime un tablero de ajedrez.");//done
 		Console.WriteLine("38. Obtener la multiplicacion de cada número en una matriz");//done
-		
+		Console.WriteLine("39. Construir una matriz de 20*20 y rellenarla con números aleatorios, para luego sumar las columnas y buscar la suma más alta");//done
+		Console.WriteLine("40. Construir una matriz de 100*100 y rellenarla con números aleatorios, para luego obtener el promedio, mostrar la suma de los números impares menores al promedio y la suma de pares mayores al promedio");//done
+		Console.WriteLine("41. Construir una matriz de 10*10 y almacenar en arreglos distintos la suma de las filas y las columnas.");//done
+		Console.WriteLine("42. Generar una matriz de 10*10 e intercambiar la primera y la última columna.");//done
+		Console.WriteLine("43. Generar una matriz de 10 * 10 y analizar detalladamente.");//done
+		Console.WriteLine("44. Ecribir Hola Mundo");
+
+
+
+
 
 		Console.WriteLine("0. Ingresa 0 para salir.");
 
