@@ -42,7 +42,11 @@ public class Options {
 		Console.WriteLine("33. Comparar las dos mitades de un arreglo haciendo una suma de cada una.");//done
 		Console.WriteLine("34. Crear un array con 100 valores random, y luego encontrar el mayor y el menor.");//done
 		Console.WriteLine("35. Sumar el 1er índice de un arreglo A con un arreglo B, metiendo el resultado en un arreglo C.");//done
-		Console.WriteLine("36. Obtener el promerio de un arreglo de 100 elementos del tipo int.");//done
+		Console.WriteLine("36. Obtener el promedio de un arreglo de 100 elementos del tipo int.");//done
+		Console.WriteLine("37. Imprime un tablero de ajedrez.");//done
+		Console.WriteLine("38. Obtener la multiplicacion de cada número en una matriz");//done
+		
+
 		Console.WriteLine("0. Ingresa 0 para salir.");
 
 
