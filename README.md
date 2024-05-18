@@ -1,4 +1,4 @@
-### Proyecto de Ejercicios de Programación en C#
+# Proyecto de Ejercicios de Programación en C#
 
 Este proyecto es una compilación de varios ejercicios de programación, los cuales pueden ser utilizados a través de un menú de selección. Además, el programa maneja errores en la entrada numérica.
 
