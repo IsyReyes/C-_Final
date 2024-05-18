@@ -130,6 +130,12 @@ public class SwitchManager{
 		case 36:
 			Arrays.ArrayAverage();
 			break;
+			case 37:
+			MatrixExercises.ChessBoard();
+			break;
+			case 38:
+			MatrixExercises.MatrixBig();
+			break;
 		case 0:
 			break;
 		default:
